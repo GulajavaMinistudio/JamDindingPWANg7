@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "buildprod": "ng build --prod=true --aot=true --buildOptimizer=true"
+    "buildprod": "ng build --prod=true --aot=true --buildOptimizer=true",
+    "static-serve": "cd dist && cd JamDindingCSS706 && live-server --port=4200 --host=localhost --entry-file=/index.html"
   },
   "private": true,
   "dependencies": {
