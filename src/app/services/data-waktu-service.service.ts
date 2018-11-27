@@ -16,13 +16,15 @@ export class DataWaktuService {
     const observableDate = Observable.create(
       observable => {
 
-        const momentlocale = moment().locale('id');
-        const susunWaktuTanggal: string = momentlocale.format('DD MMMM YYYY');
-        observable.next(susunWaktuTanggal);
-        observable.complete();
+        try {
+          const momentlocale = moment().locale('id');
+          const susunWaktuTanggal: string = momentlocale.format('DD MMMM YYYY');
+          observable.next(susunWaktuTanggal);
+          observable.complete();
+        } catch (err) {
+          Observable.throw(err);
+        }
       }
-    ).catch(
-      (error) => (Observable.throw(error))
     );
 
     return observableDate;
