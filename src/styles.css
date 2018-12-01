@@ -10,14 +10,14 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: #F08A5D;
+  background: #0e9577;
 }
 
 #outer {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #F08A5D;
+  background: #0e9577;
 }
 
 #container {
@@ -31,7 +31,7 @@ body {
   /*transform: translate(-50%, -50%);*/
   /*left: 50%;top: 50%;*/
   /*margin-left: 20%;*/
-  /*margin-top: 20%;*/
+  margin-top: 10%;
 }
 
 .class-padding-top {
@@ -41,12 +41,12 @@ body {
 
 .class-text-jam-dinding {
   font-family: 'Rubik Mono One', sans-serif;
-  color: #2B2E4A;
+  color: #db2d43;
 }
 
 .class-text-jam-tanggal {
   font-family: 'Rubik Mono One', cursive;
-  color: #B83B5E;
+  color: #0c907d;
 }
 
 /*animasi*/
